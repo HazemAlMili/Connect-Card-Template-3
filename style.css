@@ -123,13 +123,14 @@ body {
     text-decoration: none;
     color: white;
     background-color: #504e4e;
-    width: 300px;
+    width: 100%;
     padding: 10px;
     text-align: center;
     margin: 10px auto;
     border-radius: 10px;
     margin-bottom: 5px;
     transition: 0.3s;
+    margin-left: -10px;
 }
 
 
