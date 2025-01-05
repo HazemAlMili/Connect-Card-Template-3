@@ -229,9 +229,9 @@ body {
     /* color: #23a6d5; */
 }
 
-.card .links a:hover:nth-child(3) {
+.card .links a:hover:first-child {
     transform: translate(0, -5px);
-    color: #23a6d5;
+    color: #323435;
 }
 
 .card .links a:hover:nth-child(2) {
@@ -239,9 +239,14 @@ body {
     color: #1fb150;
 }
 
-.card .links a:hover:first-child {
+.card .links a:hover:nth-child(3) {
     transform: translate(0, -5px);
-    color: #323435;
+    color: #db8420;
+}
+
+.card .links a:hover:nth-child(4) {
+    transform: translate(0, -5px);
+    color: #23a6d5;
 }
 
 .card .links a:hover:last-child {
