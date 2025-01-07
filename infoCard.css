@@ -35,7 +35,8 @@ body {
 }
 
 .card {
-    background-color: rgb(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
     width: 400px;
     display: flex;
     justify-content: center;
@@ -221,6 +222,7 @@ body {
         font-size: 30px;
         transition: 0.3s;
         margin-left: -5px;
+
     }
 }
 
@@ -259,4 +261,124 @@ body {
         transform: translate(0, -5px);
     }
 
+}
+
+span:first-child {
+    width: 150px;
+    background: linear-gradient(-45deg,
+            #ee7752,
+            #753ce7,
+            #23a6d5,
+            #23d5ab);
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 300px;
+    top: -10px;
+    animation: animate 3s infinite ease alternate;
+}
+
+
+@media (max-width:992px) {
+    span:first-child {
+        top: 300px;
+        left: 100px;
+    }
+}
+
+span:nth-child(2) {
+    width: 150px;
+    background: linear-gradient(-45deg,
+            #ee7752,
+            #753ce7,
+            #23a6d5,
+            #23d5ab);
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 800px;
+    top: 160px;
+    animation: animate 4s infinite linear alternate;
+}
+
+@media (max-width:992px) {
+    span:nth-child(2) {
+        top: 100px;
+        left: 70%;
+    }
+}
+
+span:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(-45deg,
+            #ee7752,
+            #753ce7,
+            #23a6d5,
+            #23d5ab);
+    border-radius: 50%;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    animation: animate 2.5s infinite linear alternate;
+}
+
+@media (max-width:992px) {
+    span:nth-child(3) {
+        top: 50%;
+        left: 70%;
+    }
+}
+
+span:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(-45deg,
+            #ee7752,
+            #753ce7,
+            #23a6d5,
+            #23d5ab);
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    top: 80%;
+    animation: animate 3s infinite linear alternate;
+}
+
+@media (max-width:992px) {
+    span:nth-child(4) {
+        top: 90%;
+    }
+}
+
+span:nth-child(5) {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(-45deg,
+            #ee7752,
+            #753ce7,
+            #23a6d5,
+            #23d5ab);
+    border-radius: 50%;
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    animation: animate 3.5s infinite linear alternate;
+}
+
+@media (max-width:992px) {
+    span:nth-child(5) {
+        top: 100%;
+    }
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
